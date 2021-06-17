@@ -10,8 +10,8 @@ with open (filename_, 'r') as csvfile:
 
     total_votes = len(list(csvreader))
    
-   
-# A complete list of candidates who received votes DONT UNDERSTAND
+
+# A complete list of candidates who received votes 
 list_of_candidates = []
 
 with open (filename_, 'r') as csvfile:
