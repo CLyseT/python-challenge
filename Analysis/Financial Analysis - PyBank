@@ -1,0 +1,23 @@
+Last login: Wed Jun 16 20:02:12 on ttys003
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Carlyses-MacBook:~ carlysethomas$ python /Users/carlysethomas/Downloads/python-challenge/PyBank/main.py
+Financial Analysis
+------------------------------
+Total Months = 86
+Net Total = $38382578
+Average Revenue Change: $-2315
+Greatest Increase in Revenue: $1926159.0 Jan-2012
+Greatest Decrease in Revenue: $-2196167.0 Aug-2013
+(base) Carlyses-MacBook:~ carlysethomas$ 
+
+
+
+
+
+
+
+
+
