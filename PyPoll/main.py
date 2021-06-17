@@ -91,7 +91,7 @@ print("--------------------------------------")
 print(f'{all_candidates[0]} Percentage of Total Votes = {percent_Khan}%  Total Votes for Khan = {total_votes_Khan}')
 print(f'{all_candidates[1]} Percentage of Total Votes = {percent_Correy}% Total Votes for Correy = {total_votes_Correy}')
 print(f'{all_candidates[2]}  Percentage of Total Votes = {percent_Li}% Total Votes for Li = {total_votes_Li}')
-print(f'{all_candidates[0]}  Percentage of Total Votes = {percent_Tooley}% print Total Votes for O\'Tooley = {total_votes_Tooley}')
+print(f'{all_candidates[3]}  Percentage of Total Votes = {percent_Tooley}% print Total Votes for O\'Tooley = {total_votes_Tooley}')
 print("--------------------------------------")
 percents = []
 percents.append(percent_Khan)
