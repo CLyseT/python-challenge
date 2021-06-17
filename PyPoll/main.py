@@ -12,17 +12,15 @@ with open (filename_, 'r') as csvfile:
    
 
 # A complete list of candidates who received votes 
-list_of_candidates = []
+candidates = []
+ 
+with open (filename_, 'r') as file:   
+    csvreader_1 = csv.reader(file)
+    next(csvreader_1)
+    dict_candidates = {rows[2] for rows in csvreader_1}
 
-with open (filename_, 'r') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=",")
-    csvheader = next(csvfile) 
-
-    for candidates in csvreader:
-        if candidates[2] not in list_of_candidates:
-            list_of_candidates.append(candidates[2])
-
-
+    # print(dict_candidates)
+        
 # The percentage of votes each candidate won
 votes_Khan = 0
 votes_Correy = 0
@@ -84,14 +82,16 @@ total_votes_Tooley = votes_Tooley
 
 
 # The winner of the election based on popular vote 
+all_candidates = ['Khan', 'Correy','Li', "O'Tooley"]
+
 print("Election Results")
 print("--------------------------------------")
 print(f'Total Number Of Votes = {total_votes}')
 print("--------------------------------------")
-print(f'{list_of_candidates[0]}:  Percentage of Total Votes = {percent_Khan}%  Total Votes for Khan = {total_votes_Khan}')
-print(f'{list_of_candidates[1]}:  Percentage of Total Votes = {percent_Correy}% Total Votes for Correy = {total_votes_Correy}')
-print(f'{list_of_candidates[2]}:  Percentage of Total Votes = {percent_Li}% Total Votes for Li = {total_votes_Li}')
-print(f'{list_of_candidates[3]}:  Percentage of Total Votes = {percent_Tooley}% print Total Votes for O\'Tooley = {total_votes_Tooley}')
+print(f'{all_candidates[0]} Percentage of Total Votes = {percent_Khan}%  Total Votes for Khan = {total_votes_Khan}')
+print(f'{all_candidates[1]} Percentage of Total Votes = {percent_Correy}% Total Votes for Correy = {total_votes_Correy}')
+print(f'{all_candidates[2]}  Percentage of Total Votes = {percent_Li}% Total Votes for Li = {total_votes_Li}')
+print(f'{all_candidates[0]}  Percentage of Total Votes = {percent_Tooley}% print Total Votes for O\'Tooley = {total_votes_Tooley}')
 print("--------------------------------------")
 percents = []
 percents.append(percent_Khan)
@@ -99,7 +99,7 @@ percents.append(percent_Correy)
 percents.append(percent_Li)
 percents.append(percent_Tooley)
 
-grouped_list = list(zip(list_of_candidates,percents))
+grouped_list = list(zip(all_candidates,percents))
 
 for winner in grouped_list:
     if winner[1] == max(percents):
