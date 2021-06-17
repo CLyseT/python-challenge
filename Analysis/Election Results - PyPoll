@@ -1,0 +1,23 @@
+Last login: Wed Jun 16 22:04:12 on ttys003
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Carlyses-MacBook:~ carlysethomas$ source activate PythonData
+(PythonData) Carlyses-MacBook:~ carlysethomas$ python /Users/carlysethomas/Downloads/python-challenge/PyPoll/main.py
+Election Results
+--------------------------------------
+Total Number Of Votes = 3521001
+--------------------------------------
+Khan:  Percentage of Total Votes = 63%  Total Votes for Khan = 2218231
+Correy:  Percentage of Total Votes = 20% Total Votes for Correy = 704200
+Li:  Percentage of Total Votes = 14% Total Votes for Li = 492940
+O'Tooley:  Percentage of Total Votes = 3% print Total Votes for O'Tooley = 105630
+--------------------------------------
+The Winner Of The Election Was Khan
+--------------------------------------
+(PythonData) Carlyses-MacBook:~ carlysethomas$ 
+
+
+
+
