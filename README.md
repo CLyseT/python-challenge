@@ -4,6 +4,6 @@
 
 Codes can be found in the Relative Assignment Folder(s). 
 
-Results of analysis can be found in the Analysis Folder.
+Both Results/Analysis can be found in the Analysis Folder.
 
 
